@@ -1,0 +1,320 @@
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  animation: bg-effect3 var(--animation-duration-once) var(--animation-delay-time), hero-move-up var(--animation-duration-once) 3s;
+}
+
+/* 20221102 */
+.banner-text {
+  position: fixed;
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.7;
+  background-color: transparent;
+  width: 100%;
+
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fafafa;
+  transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  animation: text-effect3 var(--animation-duration-type) var(--animation-delay-time);
+}
+.banner-text .text-large {
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.7;
+  background-color: transparent;
+
+  font-size: 270px;
+  line-height: 338px;
+  text-align: right;
+
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke-width: inherit;
+  -webkit-text-stroke-color: inherit;
+}
+.banner-text .text-small {
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 700;
+  opacity: 0.7;
+  background-color: transparent;
+
+  font-size: 122px;
+  line-height: 166px;
+  text-align: right;
+
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke-width: inherit;
+  -webkit-text-stroke-color: inherit;
+}
+.banner-text:nth-child(1) {
+  animation: move1 var(--animation-duration-type) var(--animation-delay-time);
+}
+.banner-text:nth-child(2) {
+  animation: move2 var(--animation-duration-type) var(--animation-delay-time);
+}
+.banner-text:nth-child(3) {
+  animation: move3 var(--animation-duration-type) var(--animation-delay-time);
+}
+.banner-text:nth-child(4) {
+  animation: move4 var(--animation-duration-type) var(--animation-delay-time);
+}
+.banner-text:nth-child(5) {
+  animation: move5 var(--animation-duration-type) var(--animation-delay-time);
+}
+.banner-text:nth-child(6) {
+  animation: move6 var(--animation-duration-type) var(--animation-delay-time);
+}
+
+@keyframes bg-effect3 {
+  0% {
+    opacity: 1;
+    background-color: #333333;
+  }
+  50% {
+    opacity: 1;
+    background-color: #333333;
+  }
+  100% {
+    background-color: #fafafa;
+  }
+}
+@-o-keyframes bg-effect3 {
+  0% {
+    background-color: #333333;
+  }
+  50% {
+    background-color: #333333;
+  }
+  100% {
+    background-color: #fafafa;
+    /* background-color: #333333; */
+  }
+}
+@-moz-keyframes bg-effect3 {
+  0% {
+    background-color: #333333;
+  }
+  50% {
+    background-color: #333333;
+  }
+  100% {
+    background-color: #fafafa;
+    /* background-color: #333333; */
+  }
+}
+@-webkit-keyframes bg-effect3 {
+  0% {
+    background-color: #333333;
+  }
+  50% {
+    background-color: #333333;
+  }
+  100% {
+    background-color: #fafafa;
+    /* background-color: #333333; */
+  }
+}
+
+@keyframes text-effect3 {
+  0% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  50% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  100% {
+    transform: matrix(1, -0.2, 0, 1, 0, 0);
+    opacity: 0;
+  }
+}
+@-o-keyframes text-effect3 {
+  0% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  50% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  100% {
+    transform: matrix(1, -0.2, 0, 1, 0, 0);
+    opacity: 0;
+  }
+}
+@-moz-keyframes text-effect3 {
+  0% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  50% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  100% {
+    transform: matrix(1, -0.2, 0, 1, 0, 0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes text-effect3 {
+  0% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  50% {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0);
+  }
+  100% {
+    transform: matrix(1, -0.2, 0, 1, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes move1 {
+  0% {
+    top: 10%;
+    right: 35px;
+  }
+  50% {
+    top: 26px;
+    right: 10%;
+  }
+  100% {
+    top: 20%;
+    right: 10%;
+  }
+}
+@keyframes move2 {
+  0% {
+    top: 11%;
+    right: calc(35px * 2);
+  }
+  50% {
+    top: calc(26px * 2);
+    right: 10%;
+  }
+  100% {
+    top: 20%;
+    right: 10%;
+  }
+}
+@keyframes move3 {
+  0% {
+    top: 12%;
+    right: calc(35px * 3);
+  }
+  50% {
+    top: calc(26px * 3);
+    right: 10%;
+  }
+  100% {
+    top: 20%;
+    right: 10%;
+  }
+}
+@keyframes move4 {
+  0% {
+    top: 13%;
+    right: calc(35px * 4);
+  }
+  50% {
+    top: calc(26px * 4);
+    right: 10%;
+  }
+  100% {
+    top: 20%;
+    right: 10%;
+  }
+}
+@keyframes move5 {
+  0% {
+    top: 14%;
+    right: calc(35px * 5);
+  }
+  50% {
+    top: calc(26px * 5);
+    right: 10%;
+  }
+  100% {
+    top: 20%;
+    right: 10%;
+  }
+}
+@keyframes move6 {
+  0% {
+    top: 15%;
+    right: calc(35px * 6);
+  }
+  50% {
+    top: calc(26px * 6);
+    right: 10%;
+  }
+  100% {
+    top: 20%;
+    right: 10%;
+  }
+}
+
+/* 20221103 */
+.static-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  animation: static-text-effect linear 900ms;
+}
+.static-text .text-large {
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 400;
+  opacity: 1;
+  background-color: transparent;
+  width: 100%;
+  font-size: 270px;
+  line-height: 338px;
+  text-align: center;
+  transform: matrix(1, -0.2, 0, 1, 0, 0);
+}
+.static-text .text-small {
+  font-family: "Do Hyeon";
+  font-style: normal;
+  font-weight: 700;
+  opacity: 1;
+  background-color: transparent;
+  width: calc(100% - 150px);
+  margin-right: 150px;
+  font-size: 122px;
+  line-height: 166px;
+  text-align: right;
+  transform: matrix(1, -0.2, 0, 1, 0, 0);
+}
+.yellow {
+  color: var(--primary);
+}
+.dark {
+  color: var(--black);
+}
+
+@keyframes static-text-effect {
+  0%,
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hero-move-up {
+  0%,
+  50% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    top: -1000px;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
