@@ -2,9 +2,12 @@
 
 The F2E 4th 視差滾動活動網站
 
+## Screenshot
+![alt cover](https://github.com/CharlesSin/2022-THE-F2E-WeekOne/blob/master/images/cover.jpg)
+
 ## Demo
 
-[Demo]()
+[Demo](https://2022-the-f2e.netlify.app/)
 
 ## Introduction
 
