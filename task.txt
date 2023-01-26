@@ -1,0 +1,6 @@
+1. minify CSS [DONE]
+2. minify javascript [DONE]
+3. adding seo tag [DONE]
+4. adding sitemap.xml [DONE]
+5. adding robots.txt [DONE]
+6. adding browser fingerprint for tracking who view landing page [DONE]

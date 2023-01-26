@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+sitemap: https://2022-the-f2e.netlify.app/sitemap.xml

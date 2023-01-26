@@ -1,0 +1,197 @@
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+
+  &.animation .bg-card {
+    animation: bg-card-effect linear 1s;
+  }
+
+  &.animation .title-text {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 3s, opacity 3s;
+  }
+
+  .bg-card {
+    object-fit: cover;
+    object-position: center center;
+    height: calc(100% - 92px);
+    width: auto;
+    margin-top: 92px;
+  }
+
+  .title-text {
+    position: absolute;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 74px;
+    color: #000000;
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes bg-card-effect {
+  from {
+    transform: matrix(1, -0.22, 0, 0.98, 0, 0) translate(50%, 100%);
+  }
+  to {
+    transform: matrix(1, -0.2, 0, 1, 0, 0) translate(-10%, -10%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .content .bg-card {
+    object-fit: cover;
+    height: auto;
+    width: 90%;
+    margin: 0 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content .bg-card {
+    object-fit: cover;
+    height: auto;
+    width: 90%;
+    margin: 0 12px;
+  }
+
+  .content .title-text {
+    width: 298px;
+    font-size: 48px;
+    line-height: 65px;
+  }
+}
+
+.cool-emoji,
+.wish-emoji,
+.dizzy-emoji,
+.star-img {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.content.animation .cool-emoji,
+.content.animation .wish-emoji,
+.content.animation .dizzy-emoji,
+.content.animation .star-img {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 5s, opacity 5s;
+}
+
+.cool-emoji:nth-child(2),
+.wish-emoji:nth-child(2) {
+  width: 200px;
+  top: 20%;
+  right: 10%;
+  transform: translate(-5%, -20%) rotate(20deg);
+}
+
+.cool-emoji:nth-child(3),
+.wish-emoji:nth-child(3) {
+  width: 220px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -0);
+}
+
+.cool-emoji:nth-child(4),
+.wish-emoji:nth-child(4) {
+  width: 200px;
+  top: 35%;
+  left: 10%;
+  transform: translate(-10%, -20%) rotate(-30deg);
+}
+
+.dizzy-emoji:nth-child(2) {
+  width: 200px;
+  top: 20%;
+  right: 10%;
+  transform: translate(-5%, -20%) rotate(20deg);
+}
+
+.star-img:nth-child(5) {
+  width: 200px;
+  top: 35%;
+  left: 13%;
+  transform: translate(-13%, -35%) rotate(0deg);
+}
+
+.dizzy-emoji:nth-child(3) {
+  width: 220px;
+  bottom: 0;
+  left: 45%;
+  transform: translate(-45%, -0);
+}
+
+.star-img:nth-child(4) {
+  width: 220px;
+  bottom: 0;
+  left: 60%;
+  transform: translate(-60%, -0);
+}
+
+@media (max-width: 480px) {
+  .cool-emoji:nth-child(2),
+  .wish-emoji:nth-child(2) {
+    width: clamp(130px, 23vw, 200px);
+    top: 15%;
+    right: 0;
+    transform: translate(0, -15%) rotate(20deg);
+  }
+
+  .cool-emoji:nth-child(3),
+  .wish-emoji:nth-child(3) {
+    width: clamp(150px, 26.6vw, 220px);
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+  }
+
+  .cool-emoji:nth-child(4),
+  .wish-emoji:nth-child(4) {
+    width: clamp(130px, 23vw, 200px);
+    top: 25%;
+    left: 1%;
+    transform: translate(-1%, -25%) rotate(-30deg);
+  }
+
+  .dizzy-emoji:nth-child(2) {
+    width: clamp(130px, 23vw, 200px);
+    top: 18%;
+    right: 0;
+    transform: translate(0, -18%) rotate(20deg);
+  }
+
+  .star-img:nth-child(5) {
+    width: clamp(120px, 23vw, 200px);
+    top: 28%;
+    left: 0;
+    transform: translate(0, -28%);
+  }
+
+  .dizzy-emoji:nth-child(3) {
+    width: clamp(120px, 26.6vw, 220px);
+    bottom: 20%;
+    left: 30%;
+    transform: translate(-30%, -20%);
+  }
+
+  .star-img:nth-child(4) {
+    width: clamp(120px, 26.6vw, 220px);
+    bottom: 20%;
+    right: 30%;
+    transform: translate(-30%, -20%);
+  }
+}

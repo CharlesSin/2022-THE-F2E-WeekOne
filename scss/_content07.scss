@@ -1,0 +1,132 @@
+.content-7 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.content-7 .award-row {
+  display: flex;
+  gap: 120px;
+  height: 100%;
+  width: calc(100% - 168px);
+  margin: 0 84px;
+}
+
+.content-7 .award-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  margin-top: 140px;
+  margin-bottom: 48px;
+}
+
+.content-7 .award-title {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: normal;
+  font-size: 54px;
+  line-height: 68px;
+  color: var(--yellow);
+}
+
+.content-7 .paragraph-text {
+  font-size: 40px;
+  line-height: 54px;
+  margin-top: 16px;
+}
+
+.content-7 .award-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+.content-7 .award-item {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.content-7 .award-item:nth-child(1) {
+  transition: transform 0.3s, opacity 0.6s;
+}
+
+.content-7 .award-item:nth-child(2) {
+  transition: transform 0.6s, opacity 0.6s;
+}
+
+.content-7 .award-item:nth-child(3) {
+  transition: transform 0.9s, opacity 0.6s;
+}
+
+.content-7 .award-item:nth-child(4) {
+  transition: transform 1.2s, opacity 0.6s;
+}
+
+.content-7 .award-item.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.content-7 .award-item p {
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.content-7 .award-item p .highlight {
+  color: var(--yellow);
+}
+
+.content-7 .award-item small {
+  font-size: 18px;
+  line-height: 54px;
+  margin-top: 16px;
+}
+
+@media (max-width: 1024px) {
+  .content-7 {
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  .content-7 .award-row {
+    flex-direction: column;
+    gap: 0;
+    height: 100%;
+    width: calc(100% - 48px);
+    margin: 0 24px;
+  }
+
+  .content-7 .award-col {
+    margin-top: 84px;
+  }
+
+  .content-7 .award-title {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .content-7 .paragraph-text {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .content-7 .award-item {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  .content-7 .award-item p {
+    font-size: 36px;
+    line-height: 50px;
+  }
+
+  .content-7 .award-item small {
+    font-size: 16px;
+  }
+}

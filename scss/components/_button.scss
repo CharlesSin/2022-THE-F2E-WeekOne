@@ -1,0 +1,13 @@
+@each $key, $val in $btn-colors {
+  /* Button Colour */
+  .btn-#{$key} {
+    background-color: $val;
+  }
+}
+
+@each $key, $val in $btn-hover-colors {
+  /* Button Hover Colour */
+  .btn-#{$key}:hover {
+    background-color: $val;
+  }
+}

@@ -1,0 +1,50 @@
+@use "sass:math";
+
+.dark-theme {
+  --logo-colour: #000000;
+  --link-colour: rgba(0, 0, 0, 0.7);
+  --link-colour-hover: rgba(0, 0, 0, 1);
+}
+
+.light-theme {
+  --logo-colour: #fafafa;
+  --link-colour: rgba(255, 255, 255, 0.7);
+  --link-colour-hover: rgba(255, 255, 255, 1);
+}
+
+@each $key, $val in $colors {
+  /* Text Colour */
+  .text-#{$key} {
+    color: $val;
+  }
+  /* Section Background */
+  .bg-#{$key} {
+    background-color: $val;
+  }
+  /* Outline Text Colour */
+  .outline-text-#{key} {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $val;
+  }
+
+  @if ($val == black or $val == white or $val == #f1cb04) {
+    // light variations
+    @for $i from 1 through 9 {
+      /* Text Colour */
+      .text-#{$key}-light-#{$i}0 {
+        color: rgba(0, 0, 0, math.div($i, 10));
+      }
+      /* Section Background */
+      .bg-#{$key}-light-#{$i}0 {
+        background-color: rgba(0, 0, 0, math.div($i, 10));
+      }
+      /* Outline Text Colour */
+      .outline-text-#{key}-light-#{$i}0 {
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, math.div($i, 10));
+      }
+    }
+  }
+}

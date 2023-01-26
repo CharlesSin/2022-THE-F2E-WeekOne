@@ -1,0 +1,59 @@
+// theme colors
+$primary: #f1cb04;
+$primary-hover: #f1af04;
+$secondary: #fff1aa;
+$secondary-hover: #f1cb04;
+$dark: #333333;
+$light: #fafafa;
+$black: #000000;
+$white: #ffffff;
+$dark-card-bg: #424242;
+$dark-card-bg-hover: #4f4f4f;
+
+// Animation
+$animation-delay-time: 1000ms;
+$animation-duration-type: infinite;
+$animation-duration-once: linear;
+
+// Font Family
+$font-family-primary: "Do Hyeon", sans-serif;
+$font-family-secondary: "Noto Sans", sans-serif;
+
+// Font Weight
+$weight-light: 400;
+$weight-heavy: 700;
+
+// color palette
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  "black": $black,
+  "white": $white,
+);
+
+$btn-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+);
+
+$btn-hover-colors: (
+  "primary": $primary-hover,
+  "secondary": $secondary-hover,
+);
+
+// $dark-bg: #333333;
+// $light-bg: #fafafa;
+// $yello-bg: #fff1aa;
+// $dark-card-bg: #424242;
+// $dark-card-bg-hover: #4f4f4f;
+
+// $black-70: rgba(0, 0, 0, 0.7);
+// $light: #fafafa;
+// $light-70: rgba(255, 255, 255, 0.7);
+
+// $primary-btn: #f1cb04;
+// $primary-btn-hover: #f1af04;
+// $secondary-btn: #fff1aa;
+// $secondary-btn-hover: #f1cb04;
