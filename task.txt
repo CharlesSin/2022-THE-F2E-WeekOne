@@ -1,3 +1,7 @@
+Date: 25/01/2023
+1. Update correct HTML lang to zh-Hant-TW.
+
+Date: 21/01/2023
 1. minify CSS [DONE]
 2. minify javascript [DONE]
 3. adding seo tag [DONE]
